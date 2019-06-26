@@ -76,6 +76,8 @@ switch (command){
             console.log(error);
         });
         break;
+
+    //This case is a criteria requirement to read a file and run its input through the program, admittedly I did a pretty bulky/crude implimentation
     case "do-what-it-says":
         fs.readFile('random.txt', "utf8", (err, data) => {
             if (err) throw err;
